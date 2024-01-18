@@ -10,12 +10,23 @@
 // addFirstAndLast([-9, 12, 33, 29])
 //     should evaluate to 20
 
-let numberListOne = [4,6,8,10,12];
+let numberListOne = [4, 5, 6, 2];
 let numberListTwo = [3,-15,62,18,30];
 let numberListThree = [0,16,33,9,2,19];
 
-//function addFirstAndLast(numbers) {
-  //let total = 
+function addFirstAndLast(numbers) {
+  let totalSum = numbers.at(0) + numbers.at(numbers.length - 1);
+  return totalSum;
+}
+
+let list1 = addFirstAndLast(numberListOne);
+console.log(`sum of first and last array number: ${list1}`);
+
+let list2 = addFirstAndLast(numberListTwo);
+console.log(`sum of first and last array number: ${list2}`);
+
+let list3 = addFirstAndLast(numberListThree);
+console.log(`sum of first and last array number: ${list3}`);
 
 
 try {
