@@ -14,12 +14,18 @@
 //     should evaluate to "dolphinBoopBeepBoop"
 
 let randomArr1 = ['animal', 'crackers', 'in', 'my', 'soup'];
+let randomArr2 = ['you', 'cant', 'always', 'get', 'what', 'you', 'want'];
 
-function smooshSomeStrings(array, n) {
-  console.log(array.join(''));
+function smooshSomeStrings(array, n) { //function takes array & number as parameters
+  
+  let rearrange = array.splice(n); //use array.splice()
+  let newStr = rearrange.join(''); //use array.join()
+  console.log(newStr);
 }
 
-smooshSomeStrings(randomArr1);
+smooshSomeStrings(randomArr1, 1);
+smooshSomeStrings(randomArr2, 2);
+
 
 try {
   module.exports = smooshSomeStrings;
