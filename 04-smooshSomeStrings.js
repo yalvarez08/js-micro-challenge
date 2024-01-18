@@ -13,10 +13,13 @@
 // smooshSomeStrings(["Turtle", "dolphin", "Boop", "Beep", "Boop"], 1)
 //     should evaluate to "dolphinBoopBeepBoop"
 
+let randomArr1 = ['animal', 'crackers', 'in', 'my', 'soup'];
 
-function smooshSomeStrings() {
-  
+function smooshSomeStrings(array, n) {
+  console.log(array.join(''));
 }
+
+smooshSomeStrings(randomArr1);
 
 try {
   module.exports = smooshSomeStrings;

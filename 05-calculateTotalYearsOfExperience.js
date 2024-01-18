@@ -14,6 +14,11 @@
 //     should evaluate to 14
 
 
+let employees = [
+  { name: "Tony", yearsOfExperience: 10 }, 
+  { name: "Carla", yearsOfExperience: 4 }
+  ]
+
 function calculateTotalYearsOfExperience() {
 
 }
