@@ -14,9 +14,9 @@ let numberListOne = [4,6,8,10,12];
 let numberListTwo = [3,-15,62,18,30];
 let numberListThree = [0,16,33,9,2,19];
 
-function addFirstAndLast(numbers) {
-  let total = 
-}
+//function addFirstAndLast(numbers) {
+  //let total = 
+
 
 try {
   module.exports = addFirstAndLast;

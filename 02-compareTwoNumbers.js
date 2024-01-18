@@ -26,14 +26,21 @@ function compareTwoNumbers(firstNum, secondNum) {
   if (firstNum > secondNum){
     return("The first number was bigger!");
   }
-  else if (firstNum > secondNum){
+  else if (firstNum < secondNum){
     return("The second number was bigger!");
   }
-  else if(firstNum===secondNum) {
+  else {
     return("The numbers are the same!");
   }
 }
-compareTwoNumbers(3, 6);
+let result1 = compareTwoNumbers(0, 8);
+console.log(result1);
+
+let result2 = compareTwoNumbers(10, 10);
+console.log(result2);
+
+let result3 = compareTwoNumbers(5, 2);
+console.log(result3);
 
 try {
   module.exports = compareTwoNumbers;
