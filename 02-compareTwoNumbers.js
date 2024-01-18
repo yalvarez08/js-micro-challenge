@@ -21,9 +21,19 @@
 //     should evaluate to "The numbers are the same!"
 
 
-function compareTwoNumbers() {
-
+function compareTwoNumbers(firstNum, secondNum) {
+  
+  if (firstNum > secondNum){
+    return("The first number was bigger!");
+  }
+  else if (firstNum > secondNum){
+    return("The second number was bigger!");
+  }
+  else if(firstNum===secondNum) {
+    return("The numbers are the same!");
+  }
 }
+compareTwoNumbers(3, 6);
 
 try {
   module.exports = compareTwoNumbers;
