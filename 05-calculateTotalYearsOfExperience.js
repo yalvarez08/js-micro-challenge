@@ -15,13 +15,21 @@
 
 
 let employees = [
-  { name: "Tony", yearsOfExperience: 10 }, 
-  { name: "Carla", yearsOfExperience: 4 }
-  ]
+  { name: "Oscar", yearsOfExperience: 10 }, 
+  { name: "Rochelle", yearsOfExperience: 4 },
+  { name: "Shane", yearsOfExperience: 2 },
+  { name: "Greg", yearsOfExperience: 5 }
+]
 
-function calculateTotalYearsOfExperience() {
+function calculateTotalYearsOfExperience(array) {
+let totalExperience = 0;
 
-}
+  for (let employee of employees) {
+    totalExperience += employee.yearsOfExperience;   
+  }
+  return (console.log('total years of experience:', totalExperience));
+} 
+calculateTotalYearsOfExperience(employees);
 
 try {
   module.exports = calculateTotalYearsOfExperience;
